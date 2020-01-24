@@ -6,19 +6,21 @@ import { Card,  CardBody,
 
 
 const StarWarsCard = props => {
-  console.log(props)
+  //console.log(props.birth_year)
     return (
    
-        <Card>
+        <Card style={{margin:"10%", opacity:"0.9", backgroundColor:"Tan", color:"Black" }}>
+        <CardBody >
       <CardTitle className="title">Name: {props.name}</CardTitle>
-      <CardBody>
-        <CardText>Height: {props.hight}</CardText>
+      
+        <CardText>Height: {props.height}</CardText>
         <CardText>Mass: {props.mass}</CardText>
-        <CardText>Hair color: {props.hair_color}</CardText>
-        <CardText>Skin color: {props.skin_color}</CardText>
-        <CardText>Eye color: {props.eye_color}</CardText>
-        <CardText>Birth Year: {props.birth_year}</CardText>
+        <CardText>Hair color: {props.hair}</CardText>
+        <CardText>Eye color: {props.eyes}</CardText>
         <CardText>Gender: {props.gender}</CardText>
+        
+       
+       
        
       </CardBody>
     </Card>
